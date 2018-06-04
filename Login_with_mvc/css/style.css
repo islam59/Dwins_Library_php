@@ -1,0 +1,35 @@
+
+body{
+	background:#0A4F94;
+}
+.body{
+	height:100vh; 
+}
+form{
+	margin-top:30vh; 
+}
+.control-label{
+	color:white; 
+}
+input[type='email'],
+input[type='password'],
+.btn{
+	border-radius:0px;
+}
+h3{
+	color:white;
+	text-align:center;
+	height:5vh;
+}
+.home1{
+	font-size:15em;
+	color:white;
+}
+.home2{
+	font-size:25em;
+	color:white;	
+}
+center{
+	padding-top:70px;
+	border-bottom:20px solid white;
+}

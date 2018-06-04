@@ -1,7 +1,9 @@
-<?php  /*mvc framework setup*/
+<?php 
 	include 'mvc-FRAMEWORK/Library/Session.php';/*session file included*/
 	Session::init();
-	
+?>
+
+<?php  /*mvc framework setup*/	
 	include 'mvc-FRAMEWORK/Configuration/config.php';/*database info file included*/
 	include 'mvc-FRAMEWORK/Library/Database.php';/*database qry file included*/
 
@@ -22,7 +24,6 @@
 			$query = "SELECT * FROM tb_user WHERE email='$email' AND password='$password' AND status=1"; 
 			$result = $db->select($query);
 			if($user = $result->fetch_assoc()){
-				Session::set('login',true);
 				Session::set('email',$user['email']);
 				Session::set('password',$user['password']);
 				
@@ -55,28 +56,18 @@
     <![endif]-->
   </head>
   <body>
-	<div class="container body">
-		<div class="col-sm-12 col-md-4 col-lg-4"></div>
-		<div class="col-sm-12 col-md-4 col-lg-4 form">
-			
+	<div class="container body">			
 <!--==================================================-->
-<form action="index.php" method="post">
-  <h3><span class="glyphicon glyphicon-flag" aria-hidden="true"></span>Login With MVC</h3>
-  <div class="form-group">
-    <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-  </div>
-  <div class="form-group">
-    <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-
-  <input name="login" type="submit" value="Login" class="btn btn-default">
-  
-	<?php /*generated msg print after click on login button*/
-		if(isset($msg)) { echo $msg;  }
-	?>
-</form>
-
-
+	<h1 style="color:white;">
+		Home Page <small><?php echo Session::get('email'); ?></small>
+		<a href="index.php" class="btn btn-danger pull-right">Logout</a>
+	</h1>
+	<hr/>
+	<center>
+		<span class="glyphicon glyphicon-home home1"></span>
+		<span class="glyphicon glyphicon-home home2"></span>
+		<span class="glyphicon glyphicon-home home1"></span>
+	</center>
 <!--==================================================-->
 			
 		</div>
