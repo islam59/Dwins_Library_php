@@ -1,0 +1,61 @@
+ *{margin:0;padding:0;outline:none}
+ body{font-family:verdana}
+ .project{width:900px; margin: 0 auto;background:#024}
+ .headeroption, .footeroption{background:#024;color:#fff;text-align:center;padding:20px;overflow:hidden;}
+ .headeroption h2, .footeroption h2{margin:0;font-size:30px;color:#FFBDAA;}
+.maincontent {
+  font-size: 18px;
+  min-height: 430px;
+  padding: 10px 20px 20px;
+}
+.maincontent h2 {
+  border-bottom: 3px solid #fff;
+  border-radius: 25px;
+  border-top: 3px solid #fff;
+  font-size: 20px;
+  margin: 0;
+  padding: 5px 0;
+  text-align: center;
+  color:#fff;
+}
+ .content{width:828px;min-height:380px;background:#fff;border:1px solid #802D15;margin-top:10px;padding:15px;overflow:hidden;}
+ p{margin:0}
+ input[type="text"],input[type="password"]{width:238px;padding:5px;}
+input[type="submit"] {
+  background: #d4826a none repeat scroll 0 0;
+  border: 1px solid #9e4b33;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 1px 20px;
+}
+textarea {
+  border: 1px solid #ddd;
+  height: 50px;
+  padding: 5px;
+  width: 300px;
+}
+ .select{font-size:18px;padding:2px 5px;width:250px;}
+.tblone {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  width: 100%;
+}
+ .tblone td{padding:5px 10px;text-align:center;}
+ table.tblone tr:nth-child(2n+1){background:#fff;height:30px;}
+ table.tblone tr:nth-child(2n){background:#f1f1f1;height:30px;}
+ .error{color:red;}
+ .success{color:green;}
+.topics {
+}
+.topics ul{margin:0;padding:0;list-style:none}
+.topics ul li{display:block;}
+.topics ul li a {
+  color: #802d15;
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.topics ul li a:hover{color:#D4826A;}
